@@ -415,15 +415,16 @@
       window.addEventListener("load", () => {
         // TAB
         const tablist = document.querySelector(".tablist");
-        const tabs = [...tablist.querySelectorAll("a")];
+        const tabs = [...tablist.querySelectorAll(".tablist--tab")];
         const indicator = tablist.querySelector(".tablist--indicator");
         const panels = [...document.querySelectorAll(".donate--tabpanel")];
 
         let posX = 0;
         const tabInfos = tabs.map((tab) => {
-          const tabPosX = posX;
-          posX += tab.clientWidth + 14;
-          return [tabPosX, tab.clientWidth];
+          const p = posX;
+          const w = tab.getBoundingClientRect().width;
+          posX += w + 14;
+          return [p, w];
         });
 
         tablist.addEventListener("click", (e) => {
@@ -447,9 +448,7 @@
           });
         });
 
-        indicator.style.transform = `translateX(${tabInfos[0][0]}px)`;
-        indicator.style.width = `${tabInfos[0][1]}px`;
-        panels[0].removeAttribute("hidden");
+        tabs[0].click();
 
         // SORT
         const sorting = document.querySelector(".donate--history-sort");
