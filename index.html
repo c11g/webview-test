@@ -1,23 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="flicking.css" />
+    <script src="script.js"></script>
+    <script src="jquery-1.11.1.min.js"></script>
+
+    <title>영어학습</title>
   </head>
+
   <body>
+    <!-- MAIN CONTENT -->
+
     <main class="body--donate donate">
       <div class="donate--content">
         <div class="donate--banner">
           <div class="donate--banner-text">
-            내가 학습한 시간만큼<br />
-            우리 사회는<br />
-            더 따뜻해져요.
+            내가 학습한 시간만큼<br />우리 사회는<br />더 따뜻해져요.
           </div>
           <img
-            src="./assets/images/img-avatar@3x.png"
+            src="https://stg-engweb.sktapollo.com/static/images/img-avatar@3x.png"
             width="110"
             height="136"
             class="donate--banner-img"
@@ -38,36 +42,33 @@
             <div class="donate--intro-title">학습시간 기부란?</div>
             <div class="donate--intro-box">
               <p class="donate--intro-p">
-                A.영어학습에서 학습한 시간을 기부하면 저소득층 학생들에게
-                스터디카페 이용권이 지급되는 기부입니다.
+                누적 학습 시간을 시간권으로 기부하면<br />더 나은 학습 환경이
+                필요한 학생들에게 제공됩니다.
               </p>
               <div class="donate--intro-times">
                 <div class="donate--intro-time">
                   <img
-                    src="./assets/images/icon-donate-adot@3x.png"
+                    src="https://stg-engweb.sktapollo.com/static/images/icon-donate-adot@3x.png"
                     width="44"
                     height="44"
                   />
-                  <div class="donate--intro-number">00시간30분</div>
-                  <div class="donate--intro-text">기부 학습시간</div>
+                  <div class="donate--intro-number">1시간 30분</div>
+                  <div class="donate--intro-text">누적 학습시간</div>
                 </div>
                 <img
-                  src="./assets/images/icon-arrow-r@3x.png"
+                  src="https://stg-engweb.sktapollo.com/static/images/icon-arrow-r@3x.png"
                   width="22"
                   height="18"
                   alt=""
                 />
                 <div class="donate--intro-time">
                   <img
-                    src="./assets/images/icon-donate-zaksim@3x.png"
+                    src="https://stg-cdn.sktapollo.com/english/contents/icon/logo_cafe.png"
                     width="44"
                     height="44"
                   />
-                  <div class="donate--intro-number">00시간00분</div>
-                  <div class="donate--intro-text">
-                    스터디카페<br />
-                    이용권
-                  </div>
+                  <div class="donate--intro-number">1시간 30분</div>
+                  <div class="donate--intro-text">스터디카페<br />시간권</div>
                 </div>
               </div>
             </div>
@@ -76,101 +77,273 @@
         <div class="donate--tabpanel" data-id="stats" hidden>
           <div class="donate--stats">
             <div class="donate--stats-text">
-              현재 <em>00명</em>의 아이들이<br />
-              <em>스터디카페 이용권</em>을 누리고 있어요.
+              현재 <em>18</em>명의 학생들이 기부챌린지를<br />통해 함께 학습하고
+              있습니다.
             </div>
             <div class="donate--stats-box">
               <div class="donate--stats-box-text">
-                뿌잉뿌잉뿌잉님의 누적 기부시간
+                김세원핫님의 누적 기부시간
               </div>
-              <div class="donate--stats-box-time">00시간 00분</div>
-              <div class="donate--stats-rank">상위 00%</div>
+              <div class="donate--stats-box-time">14시간 10분</div>
+              <div class="donate--stats-rank"></div>
             </div>
             <div class="donate--stats-box">
               <div class="donate--stats-box-text">
                 A.영어학습 전체 누적 기부시간
               </div>
-              <div class="donate--stats-box-time">00시간 00분</div>
+              <div class="donate--stats-box-time">68시간 15분</div>
             </div>
           </div>
         </div>
         <div class="donate--tabpanel" data-id="history" hidden>
           <div class="donate--history">
             <div class="donate--history-box">
-              <div class="donate--history-total">총 0,000명</div>
+              <div class="donate--history-total">총 18명</div>
               <ol class="donate--history-ranking">
-                <li class="donate--history-ranking-item">
+                <li class="donate--history-ranking-item is-hidden">
                   <div class="donate--history-profile">
                     <img
-                      src="https://via.placeholder.com/54x54"
+                      src="https://stg-cdn.sktapollo.com/apollo/user/profile/image/APL00000BN35LKGZFVGG/bust/19bc0a22a449d41aa25c60c93a96f2f901ecb35829927fdb34afad120af506e8.png"
                       width="54"
                       height="54"
                       alt=""
                       class="donate--history-profile-img"
                     />
                   </div>
-                  <div class="donate--history-nickname">닉네임닉네임</div>
+                  <div class="donate--history-nickname">브루우게에임</div>
                 </li>
-                <li class="donate--history-ranking-item">
+                <li class="donate--history-ranking-item is-hidden">
                   <div class="donate--history-profile">
                     <img
-                      src="https://via.placeholder.com/54x54"
+                      src="https://stg-cdn.sktapollo.com/apollo/user/profile/image/APL00000BV7GY7008LQ8/bust/04ecaf1314918d0137e2df398ae7f544d7aa099ef5d81f9741101085753977a8.png"
                       width="54"
                       height="54"
                       alt=""
                       class="donate--history-profile-img"
                     />
                   </div>
-                  <div class="donate--history-nickname">닉네임닉네임</div>
+                  <div class="donate--history-nickname">영주의펫</div>
                 </li>
-                <li class="donate--history-ranking-item">
+                <li class="donate--history-ranking-item is-hidden">
                   <div class="donate--history-profile">
                     <img
-                      src="https://via.placeholder.com/54x54"
+                      src="https://stg-cdn.sktapollo.com/apollo/user/profile/image/APL00000C7X1D2N4YEWW/bust/f02877a0c603f8780e9980137f2da095fdce3c65b685d8183bcfb4b0b5d757f1.png"
                       width="54"
                       height="54"
                       alt=""
                       class="donate--history-profile-img"
                     />
                   </div>
-                  <div class="donate--history-nickname">닉네임닉네임</div>
+                  <div class="donate--history-nickname">영어쫄세원</div>
                 </li>
-                <li class="donate--history-ranking-item">
+                <li class="donate--history-ranking-item is-hidden">
                   <div class="donate--history-profile">
                     <img
-                      src="https://via.placeholder.com/54x54"
+                      src="https://stg-cdn.sktapollo.com/apollo/user/profile/image/APL00000C9V6ZXTK75KW/bust/1eef635c7db239c5d043454b1b261705c370be6c7a0da063726a59eb6e46156e.png"
                       width="54"
                       height="54"
                       alt=""
                       class="donate--history-profile-img"
                     />
                   </div>
-                  <div class="donate--history-nickname">닉네임닉네임</div>
+                  <div class="donate--history-nickname">가나다라</div>
+                </li>
+                <li class="donate--history-ranking-item is-hidden">
+                  <div class="donate--history-profile">
+                    <img
+                      src="https://stg-cdn.sktapollo.com/apollo/user/profile/image/APL00000C9VE7QBBGGSG/bust/1f62ebf4a54b2b109987a4de017ceb73770894a74b2bc39c2855b6628d5c7e2f.png"
+                      width="54"
+                      height="54"
+                      alt=""
+                      class="donate--history-profile-img"
+                    />
+                  </div>
+                  <div class="donate--history-nickname">에이닷</div>
+                </li>
+                <li class="donate--history-ranking-item is-hidden">
+                  <div class="donate--history-profile">
+                    <img
+                      src="https://stg-cdn.sktapollo.com/apollo/user/profile/image/APL00000BTEPAZ4LHSLC/bust/0ab85ec94a743d3b794f481f0c74bf160e89645d3d0e145e51722237ffabcaa2.png"
+                      width="54"
+                      height="54"
+                      alt=""
+                      class="donate--history-profile-img"
+                    />
+                  </div>
+                  <div class="donate--history-nickname">옐옐옐옐옐</div>
+                </li>
+                <li class="donate--history-ranking-item is-hidden">
+                  <div class="donate--history-profile">
+                    <img
+                      src="https://stg-cdn.sktapollo.com/apollo/user/profile/image/APL00000BSBMYMOLSXZ4/bust/0e43d99d3ab6efd23ab68edb9f4022b7912e11361cfd68d1ec7444a1124ca4e9.png"
+                      width="54"
+                      height="54"
+                      alt=""
+                      class="donate--history-profile-img"
+                    />
+                  </div>
+                  <div class="donate--history-nickname">바보</div>
+                </li>
+                <li class="donate--history-ranking-item is-hidden">
+                  <div class="donate--history-profile">
+                    <img
+                      src="https://stg-cdn.sktapollo.com/apollo/user/profile/image/APL00000C9VE6HXLWIRK/bust/616ebeb5b4d1c3fb51250c482387cbaab7097de5c91500cdbc41a0b8d1dea37b.png"
+                      width="54"
+                      height="54"
+                      alt=""
+                      class="donate--history-profile-img"
+                    />
+                  </div>
+                  <div class="donate--history-nickname">에이닷</div>
+                </li>
+                <li class="donate--history-ranking-item is-hidden">
+                  <div class="donate--history-profile">
+                    <img
+                      src="https://stg-cdn.sktapollo.com/apollo/user/profile/image/APL00000BVI36TM69R7K/bust/43b6c70cdb29a5fb7b1ca2778da769a75e9936d43f452835e90b34418c65add2.png"
+                      width="54"
+                      height="54"
+                      alt=""
+                      class="donate--history-profile-img"
+                    />
+                  </div>
+                  <div class="donate--history-nickname">에스티지</div>
+                </li>
+                <li class="donate--history-ranking-item is-hidden">
+                  <div class="donate--history-profile">
+                    <img
+                      src="https://stg-cdn.sktapollo.com/apollo/user/profile/image/APL00000BZH9DMBZBUV4/bust/9ba14d3220254ecabe4391bfcaee102465ed04dff0629362e4713246e67630bc.png"
+                      width="54"
+                      height="54"
+                      alt=""
+                      class="donate--history-profile-img"
+                    />
+                  </div>
+                  <div class="donate--history-nickname">에이닷</div>
+                </li>
+                <li class="donate--history-ranking-item is-hidden">
+                  <div class="donate--history-profile">
+                    <img
+                      src="https://stg-cdn.sktapollo.com/apollo/user/profile/image/APL00000C7508LXUJAWW/bust/cce0642f6b16bae64fa72e306ab8b11acca631ade146f689429d24521316b944.png"
+                      width="54"
+                      height="54"
+                      alt=""
+                      class="donate--history-profile-img"
+                    />
+                  </div>
+                  <div class="donate--history-nickname">영어왕박진희</div>
+                </li>
+                <li class="donate--history-ranking-item is-hidden">
+                  <div class="donate--history-profile">
+                    <img
+                      src="https://stg-cdn.sktapollo.com/apollo/user/profile/image/APL00000C8IEVVOV4X6O/bust/28050b6074fc7a6051e20784a4fe1a28d59ffbde58cea03f71c47a6f02108055.png"
+                      width="54"
+                      height="54"
+                      alt=""
+                      class="donate--history-profile-img"
+                    />
+                  </div>
+                  <div class="donate--history-nickname">꿀떡</div>
+                </li>
+                <li class="donate--history-ranking-item is-hidden">
+                  <div class="donate--history-profile">
+                    <img
+                      src="https://stg-cdn.sktapollo.com/apollo/user/profile/image/APL00000C091NFPW4JK0/bust/66d968e83154bc47e0220f8f3138714c2e8f54c58497e22e7737ea67387c5ce7.png"
+                      width="54"
+                      height="54"
+                      alt=""
+                      class="donate--history-profile-img"
+                    />
+                  </div>
+                  <div class="donate--history-nickname">에이닷</div>
+                </li>
+                <li class="donate--history-ranking-item is-hidden">
+                  <div class="donate--history-profile">
+                    <img
+                      src="https://stg-cdn.sktapollo.com/apollo/user/profile/image/APL00000BYKBBVRU7BI8/bust/75d8647283ec907710f4f1032729647800bc89ce5e1a4e9dca8eaa4c32479f47.png"
+                      width="54"
+                      height="54"
+                      alt=""
+                      class="donate--history-profile-img"
+                    />
+                  </div>
+                  <div class="donate--history-nickname">에이닷</div>
+                </li>
+                <li class="donate--history-ranking-item is-hidden">
+                  <div class="donate--history-profile">
+                    <img
+                      src="https://stg-cdn.sktapollo.com/apollo/user/profile/image/APL00000B5N7K0225ATC/bust/173294f81038d42cf21d94141b69ed0bc036a62f247dc835e2a2a05684973a5f.png"
+                      width="54"
+                      height="54"
+                      alt=""
+                      class="donate--history-profile-img"
+                    />
+                  </div>
+                  <div class="donate--history-nickname">꺅가나다라라</div>
+                </li>
+                <li class="donate--history-ranking-item is-hidden">
+                  <div class="donate--history-profile">
+                    <img
+                      src="https://stg-cdn.sktapollo.com/apollo/user/profile/image/APL00000BULJRF2K0Q2O/bust/04f14d5a917eb330c3141657585ec6a7764398de07b773f8da7ee021334e744e.png"
+                      width="54"
+                      height="54"
+                      alt=""
+                      class="donate--history-profile-img"
+                    />
+                  </div>
+                  <div class="donate--history-nickname">비닷</div>
+                </li>
+                <li class="donate--history-ranking-item is-hidden">
+                  <div class="donate--history-profile">
+                    <img
+                      src="https://stg-cdn.sktapollo.com/apollo/user/profile/image/APL00000C9VECWXRUWOW/bust/55c661b1198332454a1bca9b9be361c5a533a719abe482caf52ea311f327720a.png"
+                      width="54"
+                      height="54"
+                      alt=""
+                      class="donate--history-profile-img"
+                    />
+                  </div>
+                  <div class="donate--history-nickname">호떡</div>
+                </li>
+                <li class="donate--history-ranking-item is-hidden">
+                  <div class="donate--history-profile">
+                    <img
+                      src="https://stg-cdn.sktapollo.com/apollo/user/profile/image/APL00000BTAZE5B8MPS0/bust/32fc0a8e9de335b93f41289f3372cedeb330d76114d0a58c833df35f1153c336.png"
+                      width="54"
+                      height="54"
+                      alt=""
+                      class="donate--history-profile-img"
+                    />
+                  </div>
+                  <div class="donate--history-nickname">뾰잉</div>
                 </li>
               </ol>
               <div class="donate--history-more">
-                <button type="button">더보기</button>
+                <button type="button" id="btnMore">더보기</button>
               </div>
             </div>
             <ul class="donate--infos">
               <li class="donate--info">
-                -가나다라마가나다라마가나다라마가나다라마가나다라마
+                - 기부에 참여한 사용자의 개인정보는 기부처에 전달되지 않으며,
+                연말정산 기부금 영수증은 발급받으실 수 없습니다.
               </li>
               <li class="donate--info">
-                -가나다라마가나다라마가나다라마가나다라마가나다라마
+                - 기부 발자취는 기부한 사용자가 설정한 캐릭터와 닉네임으로
+                표시됩니다.
               </li>
             </ul>
           </div>
         </div>
       </div>
       <div class="buttons">
-        <button type="button" class="buttons--basic">00시간 기부하기</button>
+        <button type="button" class="buttons--basic" id="btnSubmit">
+          00시간 00분 기부하기
+        </button>
       </div>
       <!-- 팝업 -->
       <div class="donate--layer is-hidden">
         <lottie-player
           class="donate--lottie"
-          src="./assets/lotties/ES_Donate_Complete.json"
+          src="ES_Donate_Complete.json"
           background="transparent"
           speed="1"
           style="width: 100%; height: 420px"
@@ -179,7 +352,7 @@
         ></lottie-player>
         <div class="donate--box">
           <img
-            src="./assets/images/icon-v2@3x.png"
+            src="https://stg-engweb.sktapollo.com/static/images/icon-v2@3x.png"
             width="60"
             height="60"
             alt=""
@@ -190,67 +363,125 @@
       <!-- 팝업 -->
       <div class="layer is-hidden">
         <div class="layer--box">
-          <div class="layer--title">기부 가능한 시간이 없어요.</div>
-          <div class="layer--desc">
-            학습 시간을 쌓으면 30분 단위로<br />기부할 수 있어요.
+          <div class="layer--title">
+            학습 시간을 쌓으면 5분 단위로<br />기부할 수 있어요.
           </div>
+          <div class="layer--desc"></div>
           <button type="button" class="layer--button">확인</button>
         </div>
       </div>
     </main>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script>
-      window.addEventListener("load", () => {
-        // TAB
-        const tablist = document.querySelector(".tablist");
-        const tabs = [...tablist.querySelectorAll("a")];
-        const indicator = tablist.querySelector(".tablist--indicator");
-        const panels = [...document.querySelectorAll(".donate--tabpanel")];
+      var availableDonationTime = "0";
 
-        let posX = 0;
-        const tabInfos = tabs.map((tab) => {
-          const tabPosX = posX;
-          posX += tab.clientWidth + 14;
-          return [tabPosX, tab.clientWidth];
-        });
+      $("#btnSubmit").on("click", function () {
+        if (Number(availableDonationTime) > 0) {
+          var params = {
+            userId: "APL00000C7X1D2N4YEWW",
+            amt: availableDonationTime,
+          };
 
-        tablist.addEventListener("click", (e) => {
-          if (e.target.nodeName !== "A") return;
-          tabs.forEach((tab) => {
-            tab.classList.remove("is-on");
+          $.ajax({
+            url: "/donation/reqDonation",
+            type: "post",
+            dataType: "json",
+            contentType: "application/json",
+            data: JSON.stringify(params),
+            success: function (data) {
+              if (data.rsltTp == "R000") {
+                $(".donate--layer").removeClass("is-hidden");
+                setTimeout(function () {
+                  location.reload();
+                }, 2000);
+              } else {
+                alert("통신이 실패하였습니다.");
+              }
+            },
+            error: function () {
+              alert("통신이 실패하였습니다.");
+            },
           });
-          e.target.classList.add("is-on");
-          const index = tabs.indexOf(e.target);
-          const tabInfo = tabInfos[index];
-          indicator.style.transform = `translateX(${tabInfo[0]}px)`;
-          indicator.style.width = `${tabInfo[1]}px`;
-
-          const panelId = e.target.dataset.panel;
-          panels.forEach((panel) => {
-            if (panel.dataset.id === panelId) {
-              panel.removeAttribute("hidden");
-            } else {
-              panel.setAttribute("hidden", true);
-            }
-          });
-        });
-
-        indicator.style.transform = `translateX(${tabInfos[0][0]}px)`;
-        indicator.style.width = `${tabInfos[0][1]}px`;
-        panels[0].removeAttribute("hidden");
-
-        // SORT
-        const sorting = document.querySelector(".donate--history-sort");
-        if (sorting) {
-          const sortButtons = [...sorting.querySelectorAll("button")];
-
-          sorting.addEventListener("click", (e) => {
-            if (e.target.nodeName !== "BUTTON") return;
-            sortButtons.forEach((button) => button.classList.remove("is-on"));
-            e.target.classList.add("is-on");
-          });
+        } else {
+          $(".layer").removeClass("is-hidden");
         }
       });
+
+      $(".layer--button").on("click", function () {
+        $(this).parent().parent().addClass("is-hidden");
+      });
+
+      // (function() {
+      // TAB
+      const tablist = document.querySelector(".tablist");
+      const tabs = [...tablist.querySelectorAll(".tablist--tab")];
+      const indicator = tablist.querySelector(".tablist--indicator");
+      const panels = [...document.querySelectorAll(".donate--tabpanel")];
+
+      let posX = 0;
+      const tabInfos = tabs.map((tab) => {
+        const tabPosX = posX;
+        const width = parseInt(window.getComputedStyle(tab).width);
+        posX += width + 14;
+        return [tabPosX, width];
+      });
+
+      tablist.addEventListener("click", (e) => {
+        if (e.target.nodeName !== "A") return;
+        tabs.forEach((tab) => {
+          tab.classList.remove("is-on");
+        });
+        e.target.classList.add("is-on");
+        const index = tabs.indexOf(e.target);
+        const tabInfo = tabInfos[index];
+        indicator.style.transform = `translateX(${tabInfo[0]}px)`;
+        indicator.style.width = `${tabInfo[1]}px`;
+
+        const panelId = e.target.dataset.panel;
+        panels.forEach((panel) => {
+          if (panel.dataset.id === panelId) {
+            panel.removeAttribute("hidden");
+          } else {
+            panel.setAttribute("hidden", true);
+          }
+        });
+      });
+
+      indicator.style.transform = `translateX(${tabInfos[0][0]}px)`;
+      indicator.style.width = `${tabInfos[0][1]}px`;
+      panels[0].removeAttribute("hidden");
+
+      // })();
+
+      const items = [
+        ...document.querySelectorAll(".donate--history-ranking-item"),
+      ];
+
+      handleMoreClick();
+
+      const button = document.querySelector(".donate--history-more");
+      button.addEventListener("click", handleMoreClick);
+
+      // 3. 8개 노출
+      function handleMoreClick() {
+        for (let i = 0; i < 6; i++) {
+          const theItem = items.shift();
+          if (!theItem) {
+            $("#btnMore").hide();
+            break;
+          }
+          theItem.classList.remove("is-hidden");
+        }
+      }
+
+      fnSessionStart();
+      fnSetTitle("기부 챌린지");
+
+      function finishEducation() {
+        fnCloseWebView();
+      }
     </script>
+
+    <!-- MAIN CONTENT -->
   </body>
 </html>
