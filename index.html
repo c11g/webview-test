@@ -4,9 +4,253 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
   <body>
-    <h1>Webview TEST</h1>
+    <main class="body--donate donate">
+      <div class="donate--content">
+        <div class="donate--banner">
+          <div class="donate--banner-text">
+            내가 학습한 시간만큼<br />
+            우리 사회는<br />
+            더 따뜻해져요.
+          </div>
+          <img
+            src="./assets/images/img-avatar@3x.png"
+            width="110"
+            height="136"
+            class="donate--banner-img"
+          />
+        </div>
+        <div class="tablist" role="tablist">
+          <a role="tab" class="tablist--tab is-on" data-panel="intro"
+            >기부 소개</a
+          >
+          <a role="tab" class="tablist--tab" data-panel="stats">기부 현황</a>
+          <a role="tab" class="tablist--tab" data-panel="history"
+            >기부 발자취</a
+          >
+          <div class="tablist--indicator"></div>
+        </div>
+        <div class="donate--tabpanel" data-id="intro" hidden>
+          <div class="donate--intro">
+            <div class="donate--intro-title">학습시간 기부란?</div>
+            <div class="donate--intro-box">
+              <p class="donate--intro-p">
+                A.영어학습에서 학습한 시간을 기부하면 저소득층 학생들에게
+                스터디카페 이용권이 지급되는 기부입니다.
+              </p>
+              <div class="donate--intro-times">
+                <div class="donate--intro-time">
+                  <img
+                    src="./assets/images/icon-donate-adot@3x.png"
+                    width="44"
+                    height="44"
+                  />
+                  <div class="donate--intro-number">00시간30분</div>
+                  <div class="donate--intro-text">기부 학습시간</div>
+                </div>
+                <img
+                  src="./assets/images/icon-arrow-r@3x.png"
+                  width="22"
+                  height="18"
+                  alt=""
+                />
+                <div class="donate--intro-time">
+                  <img
+                    src="./assets/images/icon-donate-zaksim@3x.png"
+                    width="44"
+                    height="44"
+                  />
+                  <div class="donate--intro-number">00시간00분</div>
+                  <div class="donate--intro-text">
+                    스터디카페<br />
+                    이용권
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="donate--tabpanel" data-id="stats" hidden>
+          <div class="donate--stats">
+            <div class="donate--stats-text">
+              현재 <em>00명</em>의 아이들이<br />
+              <em>스터디카페 이용권</em>을 누리고 있어요.
+            </div>
+            <div class="donate--stats-box">
+              <div class="donate--stats-box-text">
+                뿌잉뿌잉뿌잉님의 누적 기부시간
+              </div>
+              <div class="donate--stats-box-time">00시간 00분</div>
+              <div class="donate--stats-rank">상위 00%</div>
+            </div>
+            <div class="donate--stats-box">
+              <div class="donate--stats-box-text">
+                A.영어학습 전체 누적 기부시간
+              </div>
+              <div class="donate--stats-box-time">00시간 00분</div>
+            </div>
+          </div>
+        </div>
+        <div class="donate--tabpanel" data-id="history" hidden>
+          <div class="donate--history">
+            <div class="donate--history-box">
+              <div class="donate--history-total">총 0,000명</div>
+              <ol class="donate--history-ranking">
+                <li class="donate--history-ranking-item">
+                  <div class="donate--history-profile">
+                    <img
+                      src="https://via.placeholder.com/54x54"
+                      width="54"
+                      height="54"
+                      alt=""
+                      class="donate--history-profile-img"
+                    />
+                  </div>
+                  <div class="donate--history-nickname">닉네임닉네임</div>
+                </li>
+                <li class="donate--history-ranking-item">
+                  <div class="donate--history-profile">
+                    <img
+                      src="https://via.placeholder.com/54x54"
+                      width="54"
+                      height="54"
+                      alt=""
+                      class="donate--history-profile-img"
+                    />
+                  </div>
+                  <div class="donate--history-nickname">닉네임닉네임</div>
+                </li>
+                <li class="donate--history-ranking-item">
+                  <div class="donate--history-profile">
+                    <img
+                      src="https://via.placeholder.com/54x54"
+                      width="54"
+                      height="54"
+                      alt=""
+                      class="donate--history-profile-img"
+                    />
+                  </div>
+                  <div class="donate--history-nickname">닉네임닉네임</div>
+                </li>
+                <li class="donate--history-ranking-item">
+                  <div class="donate--history-profile">
+                    <img
+                      src="https://via.placeholder.com/54x54"
+                      width="54"
+                      height="54"
+                      alt=""
+                      class="donate--history-profile-img"
+                    />
+                  </div>
+                  <div class="donate--history-nickname">닉네임닉네임</div>
+                </li>
+              </ol>
+              <div class="donate--history-more">
+                <button type="button">더보기</button>
+              </div>
+            </div>
+            <ul class="donate--infos">
+              <li class="donate--info">
+                -가나다라마가나다라마가나다라마가나다라마가나다라마
+              </li>
+              <li class="donate--info">
+                -가나다라마가나다라마가나다라마가나다라마가나다라마
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="buttons">
+        <button type="button" class="buttons--basic">00시간 기부하기</button>
+      </div>
+      <!-- 팝업 -->
+      <div class="donate--layer is-hidden">
+        <lottie-player
+          class="donate--lottie"
+          src="./assets/lotties/ES_Donate_Complete.json"
+          background="transparent"
+          speed="1"
+          style="width: 100%; height: 420px"
+          loop
+          autoplay
+        ></lottie-player>
+        <div class="donate--box">
+          <img
+            src="./assets/images/icon-v2@3x.png"
+            width="60"
+            height="60"
+            alt=""
+          />
+          기부 완료!
+        </div>
+      </div>
+      <!-- 팝업 -->
+      <div class="layer is-hidden">
+        <div class="layer--box">
+          <div class="layer--title">기부 가능한 시간이 없어요.</div>
+          <div class="layer--desc">
+            학습 시간을 쌓으면 30분 단위로<br />기부할 수 있어요.
+          </div>
+          <button type="button" class="layer--button">확인</button>
+        </div>
+      </div>
+    </main>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script>
+      window.addEventListener("load", () => {
+        // TAB
+        const tablist = document.querySelector(".tablist");
+        const tabs = [...tablist.querySelectorAll("a")];
+        const indicator = tablist.querySelector(".tablist--indicator");
+        const panels = [...document.querySelectorAll(".donate--tabpanel")];
+
+        let posX = 0;
+        const tabInfos = tabs.map((tab) => {
+          const tabPosX = posX;
+          posX += tab.clientWidth + 14;
+          return [tabPosX, tab.clientWidth];
+        });
+
+        tablist.addEventListener("click", (e) => {
+          if (e.target.nodeName !== "A") return;
+          tabs.forEach((tab) => {
+            tab.classList.remove("is-on");
+          });
+          e.target.classList.add("is-on");
+          const index = tabs.indexOf(e.target);
+          const tabInfo = tabInfos[index];
+          indicator.style.transform = `translateX(${tabInfo[0]}px)`;
+          indicator.style.width = `${tabInfo[1]}px`;
+
+          const panelId = e.target.dataset.panel;
+          panels.forEach((panel) => {
+            if (panel.dataset.id === panelId) {
+              panel.removeAttribute("hidden");
+            } else {
+              panel.setAttribute("hidden", true);
+            }
+          });
+        });
+
+        indicator.style.transform = `translateX(${tabInfos[0][0]}px)`;
+        indicator.style.width = `${tabInfos[0][1]}px`;
+        panels[0].removeAttribute("hidden");
+
+        // SORT
+        const sorting = document.querySelector(".donate--history-sort");
+        if (sorting) {
+          const sortButtons = [...sorting.querySelectorAll("button")];
+
+          sorting.addEventListener("click", (e) => {
+            if (e.target.nodeName !== "BUTTON") return;
+            sortButtons.forEach((button) => button.classList.remove("is-on"));
+            e.target.classList.add("is-on");
+          });
+        }
+      });
+    </script>
   </body>
 </html>
